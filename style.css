@@ -1,0 +1,175 @@
+#todos {
+    background-color: rgb(8, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+#input{
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color:rgb(8, 66, 66);
+    margin-right: 10px;
+    outline: none;
+    font-size: 20px;
+    display: block;
+}
+
+
+#input:focus {
+    background-color:  rgb(0, 96, 151);
+    opacity: 0.4;
+}
+
+
+#myButton {
+    border:  none;
+    padding: 1rem;
+    border-radius:  15px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 2px 4px 3px 0px rgba(211, 156, 5, 0.2);
+    cursor: pointer;
+    background-color: rgb(207, 142, 0);
+    font-family: Montserrat;
+}
+
+#myButton:hover{
+    background-color: rgb(253, 186, 2);
+}
+
+ul.ul-cont {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    list-style-type: none;
+}
+#cards {
+    background-color:  rgb(3, 84, 90);
+    border-radius: 10px;
+    width: 18rem;
+    padding: 20px;
+    margin: 5rem 2rem 2rem 2rem; 
+    font-size: 1.2rem;
+    font-family:  Poppins;
+    display: flex;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+}
+.card:hover{
+transform: scale(1.2);
+}
+
+#closebtn {
+    color:  lightgrey;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+#closebtn:hover {
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+}
+
+.mycheck {
+    appearance: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.mycheck:hover {
+    cursor: pointer;
+}
+.mycheck:focus {
+    background-color: white;
+}
+
+
+#task {
+    color: white;
+    font-family: Montserrat;
+}
+
+@media screen and (max-width: 600px){
+   #todos {
+    display: block;
+    position: relative
+   }
+
+#input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#measure {
+    flex-flow: column;
+    width: 100%;
+}
+
+#one-cont {
+    margin-top: 2rem;
+    
+}
+
+#one-cont .rect1 {
+    width: 70%;
+
+}
+
+#myButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 5rem;
+    width: 90%
+}
+}
+
+#measure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#one-cont {
+    display: block;
+margin-right: 2rem;
+}
+
+
+
+.rect1 {
+    width: 200px;
+    padding: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(2, 73, 85);
+    color: white;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.rect2 {
+    width: 80px;
+    padding: 8px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgb(221, 144, 0);
+    color: white;
+    font-family: Montserrat;  
+}
